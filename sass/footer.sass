@@ -1,0 +1,172 @@
+@import "fonts"
+@import "vars"
+
+footer
+	background: $black
+	color: #fff
+	padding: 52px 0 0
+	font-size: 14px
+	.logo-text__domain
+		color: #fff
+
+.footer-top
+	padding: 0 0 32px
+
+.menu-footer
+	font-size: 16px
+	li
+		margin: 0 0 16px
+		&:last-child
+			margin: 0
+		a
+			color: #FFFFFF
+			&:hover
+				color: $accent
+
+.footer-contacts
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	margin: 2px 0 0
+	p
+		color: rgba(#fff, .3)
+		min-width: 209px
+		margin: 0 20px 0 0
+	a
+		color: #fff
+		text-decoration: none
+		&:hover
+			color: $accent
+	.phone
+		font-weight: 300
+	&:first-child
+		margin: 10px 0 0
+
+.description-service
+	color: #86909C
+	font-size: 14px
+	line-height: 140%
+	margin: 144px 0 0
+
+.footer-bottom
+	padding: 15px 0
+	border-top: 1px solid rgba(#F0F4F9, .1)
+
+.menu-documents
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 40px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #86909C
+			&:hover
+				color: $accent
+
+// modal	
+.modal-dialog
+	max-width: 524px
+
+.modal-content
+	border: none
+	padding: 32px
+	color: #545F75
+	font-size: 14px
+
+.modal-backdrop
+	background: #222835
+
+.modal-backdrop.show
+	opacity: 0.4
+
+.modal-header
+	border: none
+	padding: 0
+	flex-wrap: wrap
+	margin: 0 0 24px
+	h2
+		margin: 0
+	.btn-close
+		position: absolute
+		right: 20px
+		top: 20px
+		opacity: 1
+		margin: 0
+		padding: 0
+		z-index: 1
+		display: none
+
+.percent-comission
+	margin: 16px 0 24px
+	font-weight: 300
+
+.total-value
+	margin: 19px 0 0
+	span
+		font-weight: 300
+		display: block
+		margin: 0 0 8px
+	p
+		font-weight: bold
+		font-size: 18px
+		color: #222835	
+
+.modal-body
+	padding: 0
+
+// modal end
+
+#timerModal
+	.modal-dialog
+		max-width: 400px
+	.modal-content
+		position: relative
+		z-index: 1
+		padding: 88px 20px 77px
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			width: calc(100% - 16px)
+			height: calc(100% - 16px)
+			border: 1px dashed #CDD1D4
+			border-radius: 4px
+	.modal-body
+		padding: 0
+		max-width: 210px
+		width: 100%
+		margin: 0 auto
+		text-align: center
+	h3
+		margin: 0 0 12px
+		color: #222835
+		font-size: 18px
+	.box-text
+		font-weight: 300
+		color: #545F75
+		font-size: 14px
+
+.timer
+	font-size: 30px
+	font-weight: bold
+	color: #107E50
+	line-height: 140%
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%,-50%)
+
+.circle__item
+	svg
+		width: 100%
+		height: 100%
+
+.circle
+	margin: 0 auto 24px
+	max-width: 140px
+	width: 100%
+	position: relative

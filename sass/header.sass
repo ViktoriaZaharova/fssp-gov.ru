@@ -1,0 +1,121 @@
+@import "fonts"
+@import "vars"
+
+header
+	font-size: 14px
+	.dropdown-menu
+		min-width: 280px
+		margin: 10px 0 0
+
+.header-top
+	background: $accent
+	color: #fff
+	padding: 12px 0
+
+.location
+	display: flex
+	align-items: center
+	cursor: pointer
+	color: #fff
+	&:hover
+		color: #000
+	img
+		margin: 0 16px 0 0
+
+.name-service
+	margin: 0 0 0 auto
+	color: rgba(#fff, .6)
+
+.logo
+	@include d-flex
+	color: #86909C
+	font-size: 13px
+	&:hover
+		color: #86909C
+
+.logo-icon
+	@include d-flex
+	width: 50px
+	min-width: 50px
+	margin: 0 16px 0 0
+
+.logo-text
+	display: flex
+	flex-direction: column
+	&__domain
+		font-weight: bold
+		color: #222835
+		font-size: 26px
+		line-height: 1
+		margin: 0 0 3px
+
+.header-bottom
+	padding: 22px 0
+
+.header-contacts
+	color: #86909C
+	.phone
+		color: #86909C
+		&:hover
+			color: $accent
+
+.menu
+	display: flex
+	align-items: flex-start
+	justify-content: flex-end
+	flex-wrap: wrap
+	font-size: 16px
+	li
+		margin: 0 49px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #222835
+			&:hover
+				color: $hover
+			&.active
+				color: $accent
+
+// mobile-menu
+.mobile-menu
+	position: fixed
+	left: 0
+	top: 0
+	z-index: 3
+	width: 100%
+	max-width: 280px
+	height: 100%
+	overflow-y: auto
+	background: #fff
+	padding: 30px
+	display: none
+	&__close
+		@include d-flex
+		width: 20px
+		height: 20px
+		position: absolute
+		right: 20px
+		top: 20px
+		stroke: $accent
+	.logo
+		
+	.menu
+		margin: 20px 0
+		li
+			width: 100%
+			margin: 0 0 10px
+	.header-contacts
+		font-size: 14px
+		p
+			margin: 0 0 5px
+
+.btn-burger
+	width: 24px
+	height: 24px
+	stroke: #fff
+	display: none
+	align-items: center
+	justify-content: center
+	margin: 0 0 0 20px
+	.svg-icon
+		transform: rotate(180deg)

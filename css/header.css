@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "SegoeUI";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/SegoeUI/SegoeUI-Light.eot");
+  src: url("../fonts/SegoeUI/SegoeUI-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUI-Light.woff") format("woff"), url("../fonts/SegoeUI/SegoeUI-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/SegoeUI/SegoeUI.eot");
+  src: url("../fonts/SegoeUI/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI/SegoeUI.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/SegoeUI/SegoeUI-Bold.eot");
+  src: url("../fonts/SegoeUI/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUI-Bold.woff") format("woff"), url("../fonts/SegoeUI/SegoeUI-Bold.ttf") format("truetype");
+}
+header {
+  font-size: 14px;
+}
+header .dropdown-menu {
+  min-width: 280px;
+  margin: 10px 0 0;
+}
+
+.header-top {
+  background: #107E50;
+  color: #fff;
+  padding: 12px 0;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #fff;
+}
+.location:hover {
+  color: #000;
+}
+.location img {
+  margin: 0 16px 0 0;
+}
+
+.name-service {
+  margin: 0 0 0 auto;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #86909C;
+  font-size: 13px;
+}
+.logo:hover {
+  color: #86909C;
+}
+
+.logo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  min-width: 50px;
+  margin: 0 16px 0 0;
+}
+
+.logo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.logo-text__domain {
+  font-weight: bold;
+  color: #222835;
+  font-size: 26px;
+  line-height: 1;
+  margin: 0 0 3px;
+}
+
+.header-bottom {
+  padding: 22px 0;
+}
+
+.header-contacts {
+  color: #86909C;
+}
+.header-contacts .phone {
+  color: #86909C;
+}
+.header-contacts .phone:hover {
+  color: #107E50;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+}
+.menu li {
+  margin: 0 49px 0 0;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu li a {
+  color: #222835;
+}
+.menu li a:hover {
+  color: #085736;
+}
+.menu li a.active {
+  color: #107E50;
+}
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
+  overflow-y: auto;
+  background: #fff;
+  padding: 30px;
+  display: none;
+}
+.mobile-menu__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  stroke: #107E50;
+}
+.mobile-menu .menu {
+  margin: 20px 0;
+}
+.mobile-menu .menu li {
+  width: 100%;
+  margin: 0 0 10px;
+}
+.mobile-menu .header-contacts {
+  font-size: 14px;
+}
+.mobile-menu .header-contacts p {
+  margin: 0 0 5px;
+}
+
+.btn-burger {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 20px;
+}
+.btn-burger .svg-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}

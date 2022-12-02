@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "SegoeUI";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/SegoeUI/SegoeUI-Light.eot");
+  src: url("../fonts/SegoeUI/SegoeUI-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUI-Light.woff") format("woff"), url("../fonts/SegoeUI/SegoeUI-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/SegoeUI/SegoeUI.eot");
+  src: url("../fonts/SegoeUI/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI/SegoeUI.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/SegoeUI/SegoeUI-Bold.eot");
+  src: url("../fonts/SegoeUI/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUI-Bold.woff") format("woff"), url("../fonts/SegoeUI/SegoeUI-Bold.ttf") format("truetype");
+}
+footer {
+  background: #282B30;
+  color: #fff;
+  padding: 52px 0 0;
+  font-size: 14px;
+}
+footer .logo-text__domain {
+  color: #fff;
+}
+
+.footer-top {
+  padding: 0 0 32px;
+}
+
+.menu-footer {
+  font-size: 16px;
+}
+.menu-footer li {
+  margin: 0 0 16px;
+}
+.menu-footer li:last-child {
+  margin: 0;
+}
+.menu-footer li a {
+  color: #FFFFFF;
+}
+.menu-footer li a:hover {
+  color: #107E50;
+}
+
+.footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 2px 0 0;
+}
+.footer-contacts p {
+  color: rgba(255, 255, 255, 0.3);
+  min-width: 209px;
+  margin: 0 20px 0 0;
+}
+.footer-contacts a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-contacts a:hover {
+  color: #107E50;
+}
+.footer-contacts .phone {
+  font-weight: 300;
+}
+.footer-contacts:first-child {
+  margin: 10px 0 0;
+}
+
+.description-service {
+  color: #86909C;
+  font-size: 14px;
+  line-height: 140%;
+  margin: 144px 0 0;
+}
+
+.footer-bottom {
+  padding: 15px 0;
+  border-top: 1px solid rgba(240, 244, 249, 0.1);
+}
+
+.menu-documents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.menu-documents li {
+  margin: 0 40px 0 0;
+}
+.menu-documents li:last-child {
+  margin: 0;
+}
+.menu-documents li a {
+  color: #86909C;
+}
+.menu-documents li a:hover {
+  color: #107E50;
+}
+
+.modal-dialog {
+  max-width: 524px;
+}
+
+.modal-content {
+  border: none;
+  padding: 32px;
+  color: #545F75;
+  font-size: 14px;
+}
+
+.modal-backdrop {
+  background: #222835;
+}
+
+.modal-backdrop.show {
+  opacity: 0.4;
+}
+
+.modal-header {
+  border: none;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 24px;
+}
+.modal-header h2 {
+  margin: 0;
+}
+.modal-header .btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  display: none;
+}
+
+.percent-comission {
+  margin: 16px 0 24px;
+  font-weight: 300;
+}
+
+.total-value {
+  margin: 19px 0 0;
+}
+.total-value span {
+  font-weight: 300;
+  display: block;
+  margin: 0 0 8px;
+}
+.total-value p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #222835;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+#timerModal .modal-dialog {
+  max-width: 400px;
+}
+#timerModal .modal-content {
+  position: relative;
+  z-index: 1;
+  padding: 88px 20px 77px;
+}
+#timerModal .modal-content::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  border: 1px dashed #CDD1D4;
+  border-radius: 4px;
+}
+#timerModal .modal-body {
+  padding: 0;
+  max-width: 210px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#timerModal h3 {
+  margin: 0 0 12px;
+  color: #222835;
+  font-size: 18px;
+}
+#timerModal .box-text {
+  font-weight: 300;
+  color: #545F75;
+  font-size: 14px;
+}
+
+.timer {
+  font-size: 30px;
+  font-weight: bold;
+  color: #107E50;
+  line-height: 140%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.circle__item svg {
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  margin: 0 auto 24px;
+  max-width: 140px;
+  width: 100%;
+  position: relative;
+}

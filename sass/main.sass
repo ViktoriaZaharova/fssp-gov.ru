@@ -1,0 +1,389 @@
+@import "vars"
+
+// home
+.home-content
+	background: #F0F4F9
+	padding: 48px 0 64px
+// home end		
+
+.debit-wrapper
+	width: 100%
+
+	.info-box
+		margin: 48px 0 0
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		margin: 0 0 24px
+		h2
+			margin: 0
+			width: fit-content
+			color: $accent
+			font-size: 21px
+			font-weight: bold
+	.form
+		.checkbox
+			margin: 24px 0 
+	.tooltip-wrapper
+		margin: 0
+
+.row-car-info
+	display: none
+
+.subscribe-box
+	position: relative
+	width: 100%
+	border-radius: 3px
+	background: #fff
+	z-index: 1
+	padding: 32px 32px 176px
+	&__title
+		margin: 0 0 16px
+		color: #222835
+		font-size: 18px
+		font-weight: bold
+	&__img
+		position: absolute
+		bottom: 0
+		left: 0
+		height: 176px
+		width: 100%
+		@include d-flex
+		z-index: -2
+		img
+			max-height: 100%
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		border: 1px dashed #CDD1D4
+		border-radius: 3px
+		width: calc(100% - 16px)
+		height: calc(100% - 16px)
+		z-index: -1
+	.form-subscribe
+		margin: 24px 0 0
+	.box-text
+		color: #86909C
+		font-weight: 300
+		font-size: 14px
+
+.form-subscribe
+	input
+		background: #F0F4F9
+	button
+		width: 100%
+		margin: 24px 0 0
+	.box-text
+		margin: 16px 0 0
+
+.subscribe-success
+	display: flex
+	align-items: center
+	justify-content: center
+	font-weight: 300
+	color: $accent
+	margin: 40px auto 20px
+	img
+		margin: 0 8px 0 0
+		width: 24px
+
+.home-search-result
+	.info-box
+		&__text
+			max-width: 500px
+
+.result-search-debit-box
+	margin: 32px 0 0
+	&__title
+		font-size: 21px
+		font-weight: bold
+		color: $accent
+		margin: 0 0 16px
+	button
+		margin: 0 0 0 auto
+		padding: 16px 32px
+	.box-text
+		span
+			font-weight: 300
+			margin: 0 0 8px
+			color: #545F75
+			display: block
+		p
+			color: #222835
+			font-size: 30px
+			font-weight: bold
+
+.refresh-box
+	color: #E3463C
+	h2
+		color: #E3463C
+		margin: 0 0 16px
+		font-size: 21px
+		font-weight: bold
+
+.subscribe-wrapper
+	margin: 48px 0
+	width: 100%
+	position: relative
+	z-index: 1
+	background: #fff
+	padding: 32px
+	&__text
+		width: 100%
+	&__title
+		font-weight: bold
+		color: #222835
+		font-size: 18px
+		margin: 0 0 8px
+	.box-text
+		font-size: 14px
+		color: #86909C
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: calc(100% - 16px)
+		height: calc(100% - 16px)
+		border: 1px dashed #CDD1D4
+		border-radius: 3px
+		z-index: -1
+	.form-subscribe
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		label
+			width: calc(100% - 276px - 28px)
+			margin: 0 auto 0 0
+		button
+			max-width: 276px
+			width: 100%
+			margin: 0
+
+// official-payments	
+.official-payments-wrapper
+	position: relative
+	z-index: 1
+	width: 100%
+	overflow: hidden
+	background: #F0F4F9
+	border-radius: 3px
+	padding: 48px 64px 101px
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		border: 1px dashed #CDD1D4
+		border-radius: 3px
+		width: calc(100% - 16px)
+		height: calc(100% - 16px)
+		z-index: -1
+	.info-box
+		margin: 30px 0 0
+
+.official-payments__image
+	@include d-flex
+	max-width: 575px
+	width: 100%
+	bottom: 0
+	right: 35px
+	position: absolute
+	z-index: -2
+
+.official-payments__content
+	max-width: 530px
+	width: 100%
+
+.info-box
+	display: flex
+	align-items: flex-start
+	color: #86909C
+	font-size: 14px
+	line-height: 140%
+	&__icon
+		@include d-flex
+		margin: 0 16px 0 0
+		width: 36px
+		height: 36px
+		min-width: 36px
+		border-radius: 50%
+		background: #E1E7ED
+		fill: #86909C
+		svg
+			width: 5px
+			height: 12px
+
+// official-payments end	
+
+// question	
+.question
+	margin: 64px 0 80px
+	h2
+		margin: 0 0 48px
+
+// question end	
+
+// page-contacts
+.contacts-box
+	margin: 0 0 48px
+	p
+		margin: 0 0 8px
+		color: #545F75
+	a
+		color: #222835
+		font-size: 30px
+		font-weight: bold
+		&:hover
+			color: $accent
+	span
+		color: #545F75
+		margin: 8px 0 0
+		font-size: 14px
+		display: block
+		font-weight: 300
+// page-contacts end		
+
+// page payments	
+.payments-box
+	margin: 0 0 48px
+	color: #222835
+	&:last-child
+		margin: 0
+	&__title
+		font-size: 21px
+		font-weight: bold
+		margin: 0 0 16px
+	ol
+		>li
+			margin: 0 0 16px
+		ul
+			margin: 16px 0
+
+.payments-type
+	margin: 0 0 20px
+
+.payments-box-price
+	.box-text
+		span
+			color: #86909C
+
+.payments-box-info
+	margin: 40px 0 0
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 54px 0 0
+		&:last-child
+			margin: 0
+	p
+		font-weight: bold
+		font-size: 18px
+	span
+		font-weight: 300
+		display: block
+		font-size: 14px
+		color: #86909C
+		margin: 0 0 8px
+
+.payment-card
+	width: 100%
+	height: 100%
+	background: #F0F4F9
+	border-radius: 3px
+	padding: 32px
+	&__logo
+		margin: 0 0 16px
+		height: 45px
+		display: flex
+		align-items: center
+		img
+			max-height: 100%
+			mix-blend-mode: darken
+// page payments end	
+
+// search-result	
+.table-enforcement
+	.td-number
+		width: 75%
+	.td-sum
+		padding: 16px 0
+	tbody
+		tr
+			&:hover
+				box-shadow: none
+		td
+			padding: 32px 0 48px
+			&:first-child
+				padding: 32px 0 48px
+
+.total-debit
+	margin: 48px 0 0
+	.btn
+		margin: 0 0 0 auto
+	.box-text
+		span
+			font-weight: 300
+			display: block
+			color: #545F75
+		p
+			font-weight: bold
+			font-size: 30px
+			margin: 16px 0 0
+			color: #222835
+
+.company-payment
+	width: 100%
+	margin: 76px 0 0
+	background: #F0F4F9
+	border-radius: 3px
+	padding: 48px 92px
+	color: #545F75
+	&__logo
+		max-width: 190px
+		width: 100%
+		@include d-flex
+
+.checkbox-title
+	font-size: 18px
+	font-weight: bold
+	margin: 0 0 30px
+	align-items: center
+	.checkbox-custom
+		background-color: #86909C
+	input:checked + .checkbox-custom
+		background-color: rgba(16, 126, 80, 1)
+
+.checkbox-disabled
+	color: #86909C
+	.checkbox-custom
+		background-color: #86909C
+
+.td-disabled.td-sum
+	p
+		color: #86909C
+
+.list-enforcement
+	max-width: 710px
+	width: 100%
+	font-size: 16px
+	li
+		margin: 0 0 24px
+		&:last-child
+			margin: 0
+	span
+		margin: 0 0 8px
+		display: block
+		font-weight: 300
+		color: #86909C
+		font-size: 14px
+
+// search-result end	
