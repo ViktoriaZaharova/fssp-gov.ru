@@ -310,6 +310,10 @@ ul, ol {
   list-style-type: disc;
 }
 
+.list-line li {
+  list-style-type: "- ";
+}
+
 .my-ul {
   list-style: none;
   padding: 0;
@@ -442,7 +446,7 @@ a.color-blue:hover {
 .card-body p:last-child {
   margin: 0;
 }
-.card-body ol {
+.card-body ol, .card-body ul {
   margin: 20px 0;
 }
 
